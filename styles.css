@@ -196,7 +196,7 @@ h3 {
     border: 2px solid rgba(34, 211, 238, 0.5);
     border-radius: 24px;
     padding: 3rem;
-    transition: none;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     margin-bottom: 2rem;
     backdrop-filter: blur(10px);
     position: relative;
@@ -207,6 +207,12 @@ h3 {
     box-sizing: border-box;
     min-height: auto;
     box-shadow: 0 8px 32px rgba(34, 211, 238, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(34, 211, 238, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    border-color: rgba(34, 211, 238, 0.7);
 }
 
 
@@ -261,19 +267,14 @@ h3 {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.18), transparent);
     transition: left 0.5s ease;
+    pointer-events: none;
+    opacity: 0.7;
 }
 
 .card:hover::before {
     left: 100%;
-}
-
-.card:hover {
-    background: var(--glass-hover);
-    border-color: var(--border-hover);
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
 }
 
 .card span {
@@ -307,7 +308,7 @@ h3 {
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
     border: none;
     cursor: pointer;
     position: relative;
@@ -324,7 +325,21 @@ h3 {
     height: 100%;
     background: linear-gradient(135deg, var(--accent), var(--primary));
     transition: left 0.4s ease;
-    display: none;
+    display: block;
+    opacity: 0.2;
+}
+
+.btn:hover {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 5px 14px rgba(34, 211, 238, 0.3);
+}
+
+.btn:hover::before {
+    left: 0;
+}
+
+.btn:active {
+    transform: translateY(0) scale(0.99);
 }
 
 .btn-alt {
@@ -333,7 +348,7 @@ h3 {
     color: var(--text);
     padding: 1rem 2rem;
     border-radius: 100px;
-    transition: all 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     position: relative;
     overflow: hidden;
 }
@@ -346,9 +361,23 @@ h3 {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, var(--primary), var(--accent));
-    opacity: 0.1;
+    opacity: 0.2;
     transition: left 0.4s ease;
-    display: none;
+    display: block;
+}
+
+.btn-alt:hover {
+    transform: translateY(-1px) scale(1.005);
+    box-shadow: 0 5px 14px rgba(129, 140, 248, 0.2);
+    border-color: rgba(34, 211, 238, 0.75);
+}
+
+.btn-alt:hover::before {
+    left: 0;
+}
+
+.btn-alt:active {
+    transform: translateY(0) scale(0.98);
 }
 
 /* Grid */
@@ -472,7 +501,7 @@ body {
 @keyframes pageEnter {
     0% {
         opacity: 0;
-        transform: translateY(20px) scale(0.98);
+        transform: translateY(10px) scale(0.99);
     }
     100% {
         opacity: 1;
@@ -581,8 +610,4 @@ body {
 .input-box:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
-}
-*:hover {
-    transform: none !important;
-    box-shadow: none !important;
 }

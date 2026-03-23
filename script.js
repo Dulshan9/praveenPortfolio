@@ -71,6 +71,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
+    // Contact form success state handler
+    const contactForm = document.getElementById('contact-form');
+    const contactSuccess = document.getElementById('contact-success');
+
+    if (contactForm && contactSuccess) {
+        contactSuccess.style.opacity = '0';
+        contactSuccess.style.transform = 'translateY(10px)';
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            contactForm.reset();
+            contactSuccess.style.opacity = '1';
+            contactSuccess.style.transform = 'translateY(0)';
+
+            setTimeout(() => {
+                contactSuccess.style.opacity = '0';
+                contactSuccess.style.transform = 'translateY(10px)';
+            }, 4000);
+        });
+    }
+
     // Apply to cards and sections with staggered animation
     const animateElements = document.querySelectorAll('.card, section > h1, section > h2');
     animateElements.forEach((el, index) => {
