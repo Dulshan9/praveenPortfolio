@@ -12,28 +12,28 @@
     <div class="line-effect-v"></div>
     <div class="line-effect-v"></div>
     <div class="line-effect-v"></div>
-    <div class="corner-line top-left"></div>
     
     <header>
         <div class="logo">Praveen Wijesundara</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <!-- HOME SECTION -->
+        <section id="home">
             <h1>Building Digital Futures.</h1>
             <p>I'm Praveen, a BSc (Hons) Computer Science student at the University of Westminster building impactful mobile and web solutions that bridge technology with real-world needs.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-                <a href="about.html" class="btn">About Me</a>
-                <a href="blog.html" class="btn">Explore My Work</a>
-                <a href="contact.html" class="btn-alt">Contact Me</a>
+                <a href="#about" class="btn">About Me</a>
+                <a href="#projects" class="btn">Explore My Work</a>
+                <a href="#contact" class="btn-alt">Contact Me</a>
                 <a href="cv/README.md" class="btn-alt" target="_blank">Download CV</a>
             </div>
         </section>
@@ -60,6 +60,179 @@
                 <h2>Traffic Analyzer</h2>
                 <p>Calculates peak hour statistics and visualizes congestion patterns using CSV data. Advanced data processing for urban planning insights.</p>
                 <a href="https://github.com/Dulshan9/Traffic-Data-Analyzer" class="btn-alt" target="_blank">Analyze Data</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" style="margin-top: 6rem;">
+            <h1 style="text-align: center; margin-bottom: 3rem; font-size: 3rem;">About Me</h1>
+            
+            <section class="card hero-section" style="text-align: center; min-height: 500px; padding: 3rem 1rem; background: rgba(15, 23, 42, 0.9); border: 1px solid var(--primary);">
+                <img src="imgs/About_ProfilePic.jpg" alt="Praveen Wijesundara" 
+                     style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 2rem; border: 3px solid var(--primary); object-fit: cover;">
+                <h1>Who Am I?</h1>
+                <p style="font-size: 1.1rem; line-height: 1.7; max-width: 800px; margin: 2rem auto; color: var(--text);">
+                    I'm a passionate computer science student at the University of Westminster, specializing in client-side web development, mobile applications, and creating impactful digital solutions. My goal is to build user-friendly, visually stunning, and scalable applications that solve real-world problems and enhance user experiences.
+                </p>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="cv/Praveen_Wijesundara_CV.pdf" download="Praveen_Wijesundara_CV.pdf" class="btn" style="display: inline-block;">
+                        📄 Download Resume
+                    </a>
+                </div>
+            </section>
+
+            <section style="margin: 5rem 0 3rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Personal Information</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>🎂 Birthday</h3>
+                        <p>September 9, 2006</p>
+                    </div>
+                    <div class="card">
+                        <h3>📱 Phone</h3>
+                        <p>+94 763878653</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏠 Location</h3>
+                        <p>Seeduwa, Sri Lanka</p>
+                    </div>
+                    <div class="card">
+                        <h3>🎓 Age</h3>
+                        <p>19 years old</p>
+                    </div>
+                    <div class="card">
+                        <h3>📚 Degree</h3>
+                        <p>BSc (Hons) Computer Science</p>
+                    </div>
+                    <div class="card">
+                        <h3>✉️ Email</h3>
+                        <p>praveenwijesundara0909@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 style="text-align: center; margin-bottom: 3rem;">Technical Skills & Expertise</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>🐍 Python & Java</h3>
+                        <p>Designing efficient backend systems and developing high-performance software applications with clean, maintainable code.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌐 HTML & CSS</h3>
+                        <p>Creating visually appealing and fully responsive web layouts using modern CSS techniques and semantic HTML5.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚡ JavaScript</h3>
+                        <p>Enhancing web interactivity and functionality through dynamic, user-friendly scripts and modern ES6+ features.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤝 Teamwork</h3>
+                        <p>Collaborate effectively in group projects, contributing ideas and supporting team members to achieve common goals.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⏰ Time Management</h3>
+                        <p>Prioritizing tasks effectively to maintain productivity and deliver high-quality projects on schedule.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🎨 Creativity</h3>
+                        <p>Developing innovative coding solutions and design ideas that push boundaries and solve complex problems.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" style="margin-top: 6rem;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h1>My Projects</h1>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">A showcase of my technical skills and creative solutions. Each project represents a unique challenge and learning experience in my journey as a developer.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <span>MOBILE APP • 2025</span>
+                    <h2>MUC Digital</h2>
+                    <p>Revolutionizing municipal services with a comprehensive Flutter application. Features real-time tracking, service requests, and citizen engagement through Firebase integration.</p>
+                    <a href="https://github.com/thisal2006/muc-digital" target="_blank" class="btn-alt">Source Code</a>
+                </div>
+
+                <div class="card">
+                    <span>UI/UX DESIGN • 2024</span>
+                    <h2>AquaTech</h2>
+                    <p>An innovative water conservation platform with real-time monitoring capabilities. Designed comprehensive UI/UX in Figma for sustainable water management solutions.</p>
+                    <a href="https://www.figma.com/" target="_blank" class="btn-alt">View Design</a>
+                </div>
+
+                <div class="card">
+                    <span>DATA ANALYSIS • 2024</span>
+                    <h2>Traffic Analyzer</h2>
+                    <p>Advanced Python-based traffic analysis tool that processes CSV data to calculate peak hour statistics and visualize congestion patterns for urban planning insights.</p>
+                    <a href="https://github.com/Dulshan9/Traffic-Data-Analyzer" target="_blank" class="btn-alt">Analyze Data</a>
+                </div>
+
+                <div class="card">
+                    <span>WEB APPLICATION • 2024</span>
+                    <h2>Zero Hunger Initiative</h2>
+                    <p>A full-stack web application connecting food donors with those in need. Built with modern JavaScript, HTML5, and CSS3 to create meaningful social impact.</p>
+                    <a href="https://github.com/Dulshan9/Zero-Hunger-Initiative-Web-Application" target="_blank" class="btn-alt">View Web App</a>
+                </div>
+
+                <div class="card">
+                    <span>ACADEMIC PROJECT • 2024</span>
+                    <h2>Algorithm Visualizer</h2>
+                    <p>Interactive web-based tool for visualizing sorting and searching algorithms. Built with JavaScript and HTML5 Canvas to help students understand complex algorithms.</p>
+                    <a href="#" class="btn-alt">Coming Soon</a>
+                </div>
+
+                <div class="card">
+                    <span>PERSONAL PROJECT • 2024</span>
+                    <h2>Task Management System</h2>
+                    <p>A responsive task management application with real-time collaboration features. Demonstrates full-stack development skills with modern UI/UX principles.</p>
+                    <a href="#" class="btn-alt">Coming Soon</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" style="margin-top: 6rem;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h1>Let's Connect</h1>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss technology, or just want to say hello, I'd love to hear from you!</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h2>📧 Get In Touch</h2>
+                    <form id="contact-form" action="#" method="POST" style="margin-top: 2rem;">
+                        <input type="text" name="name" placeholder="Your Name" required class="input-box">
+                        <input type="email" name="email" placeholder="Your Email" required class="input-box">
+                        <input type="text" name="subject" placeholder="Subject" required class="input-box">
+                        <textarea name="message" placeholder="Your Message" required class="input-box" rows="6"></textarea>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                    <p id="contact-success" class="success-message" style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); opacity: 0; transform: translateY(10px); transition: opacity 0.3s ease, transform 0.3s ease;">✅ Thanks! Your message was received and I will get back to you soon.</p>
+                </div>
+
+                <div class="card">
+                    <h2>📍 Contact Information</h2>
+                    <div style="margin-top: 2rem; line-height: 2;">
+                        <p><strong>Email:</strong> praveenwijesundara0909@gmail.com</p>
+                        <p><strong>Phone:</strong> +94 763878653</p>
+                        <p><strong>Location:</strong> Seeduwa, Sri Lanka</p>
+                        <p><strong>University:</strong> University of Westminster</p>
+                        <p><strong>Degree:</strong> BSc (Hons) Computer Science</p>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 style="margin-bottom: 1rem;">🌐 Find Me Online</h3>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://github.com/Dulshan9" target="_blank" class="btn-alt" style="margin: 0;">GitHub</a>
+                            <a href="https://www.linkedin.com/in/praveen-wijesundara" target="_blank" class="btn-alt" style="margin: 0;">LinkedIn</a>
+                            <a href="mailto:praveenwijesundara0909@gmail.com" class="btn-alt" style="margin: 0;">Email</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
