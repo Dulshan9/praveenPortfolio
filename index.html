@@ -30,7 +30,7 @@
         <section id="home">
             <h1>Building Digital Futures.</h1>
             <p>I'm Praveen, a BSc (Hons) Computer Science student at the University of Westminster building impactful mobile and web solutions that bridge technology with real-world needs.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+            <div class="button-row">
                 <a href="#about" class="btn">About Me</a>
                 <a href="#projects" class="btn">Explore My Work</a>
                 <a href="#contact" class="btn-alt">Contact Me</a>
@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <section class="grid" style="margin-top: 4rem;">
+        <section class="grid section-spacing">
             <div class="card">
                 <span>MOBILE APP • 2025</span>
                 <h2>MUC Digital</h2>
@@ -64,24 +64,23 @@
         </section>
 
         <!-- ABOUT SECTION -->
-        <section id="about" style="margin-top: 6rem;">
-            <h1 style="text-align: center; margin-bottom: 3rem; font-size: 3rem;">About Me</h1>
+        <section id="about" class="section-spacing">
+            <h1 class="section-title">About Me</h1>
             
-            <section class="card hero-section" style="text-align: center; min-height: 500px; padding: 3rem 1rem; background: rgba(15, 23, 42, 0.9); border: 1px solid var(--primary);">
-                <img src="imgs/About_ProfilePic.jpg" alt="Praveen Wijesundara" 
-                     style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 2rem; border: 3px solid var(--primary); object-fit: cover;">
+            <section class="card hero-section">
+                <img src="imgs/About_ProfilePic.jpg" alt="Praveen Wijesundara" class="hero-img">
                 <h1>Who Am I?</h1>
-                <p style="font-size: 1.1rem; line-height: 1.7; max-width: 800px; margin: 2rem auto; color: var(--text);">
+                <p class="hero-copy">
                     I'm a passionate computer science student at the University of Westminster, specializing in client-side web development, mobile applications, and creating impactful digital solutions. My goal is to build user-friendly, visually stunning, and scalable applications that solve real-world problems and enhance user experiences.
                 </p>
-                <div style="margin-top: 2rem; text-align: center;">
-                    <a href="cv/Praveen_Wijesundara_CV.pdf" download="Praveen_Wijesundara_CV.pdf" class="btn" style="display: inline-block;">
+                <div class="hero-actions">
+                    <a href="cv/Praveen_Wijesundara_CV.pdf" download="Praveen_Wijesundara_CV.pdf" class="btn">
                         📄 Download Resume
                     </a>
                 </div>
             </section>
 
-            <section style="margin: 5rem 0 3rem;">
+            <section class="section-spacing">
                 <h2 style="text-align: center; margin-bottom: 3rem;">Personal Information</h2>
                 <div class="grid">
                     <div class="card">
@@ -111,8 +110,8 @@
                 </div>
             </section>
 
-            <section>
-                <h2 style="text-align: center; margin-bottom: 3rem;">Technical Skills & Expertise</h2>
+            <section class="section-spacing">
+                <h2 class="section-title">Technical Skills & Expertise</h2>
                 <div class="grid">
                     <div class="card">
                         <h3>🐍 Python & Java</h3>
@@ -143,10 +142,10 @@
         </section>
 
         <!-- PROJECTS SECTION -->
-        <section id="projects" style="margin-top: 6rem;">
-            <div style="text-align: center; margin-bottom: 4rem;">
+        <section id="projects" class="section-spacing">
+            <div class="section-header">
                 <h1>My Projects</h1>
-                <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">A showcase of my technical skills and creative solutions. Each project represents a unique challenge and learning experience in my journey as a developer.</p>
+                <p class="section-copy">A showcase of my technical skills and creative solutions. Each project represents a unique challenge and learning experience in my journey as a developer.</p>
             </div>
 
             <div class="grid">
@@ -195,28 +194,28 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact" style="margin-top: 6rem;">
-            <div style="text-align: center; margin-bottom: 3rem;">
+        <section id="contact" class="section-spacing">
+            <div class="section-header">
                 <h1>Let's Connect</h1>
-                <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss technology, or just want to say hello, I'd love to hear from you!</p>
+                <p class="section-copy">I'm always interested in new opportunities and collaborations. Whether you have a project in mind, want to discuss technology, or just want to say hello, I'd love to hear from you!</p>
             </div>
 
             <div class="grid">
                 <div class="card">
                     <h2>📧 Get In Touch</h2>
-                    <form id="contact-form" action="#" method="POST" style="margin-top: 2rem;">
+                    <form id="contact-form" action="#" method="POST" class="contact-form">
                         <input type="text" name="name" placeholder="Your Name" required class="input-box">
                         <input type="email" name="email" placeholder="Your Email" required class="input-box">
                         <input type="text" name="subject" placeholder="Subject" required class="input-box">
                         <textarea name="message" placeholder="Your Message" required class="input-box" rows="6"></textarea>
-                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                        <button type="submit" class="btn btn-full">Send Message</button>
                     </form>
-                    <p id="contact-success" class="success-message" style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); opacity: 0; transform: translateY(10px); transition: opacity 0.3s ease, transform 0.3s ease;">✅ Thanks! Your message was received and I will get back to you soon.</p>
+                    <p id="contact-success" class="success-message">✅ Thanks! Your message was received and I will get back to you soon.</p>
                 </div>
 
                 <div class="card">
                     <h2>📍 Contact Information</h2>
-                    <div style="margin-top: 2rem; line-height: 2;">
+                    <div class="contact-details">
                         <p><strong>Email:</strong> praveenwijesundara0909@gmail.com</p>
                         <p><strong>Phone:</strong> +94 763878653</p>
                         <p><strong>Location:</strong> Seeduwa, Sri Lanka</p>
@@ -224,12 +223,12 @@
                         <p><strong>Degree:</strong> BSc (Hons) Computer Science</p>
                     </div>
 
-                    <div style="margin-top: 2rem;">
-                        <h3 style="margin-bottom: 1rem;">🌐 Find Me Online</h3>
-                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <a href="https://github.com/Dulshan9" target="_blank" class="btn-alt" style="margin: 0;">GitHub</a>
-                            <a href="https://www.linkedin.com/in/praveen-wijesundara" target="_blank" class="btn-alt" style="margin: 0;">LinkedIn</a>
-                            <a href="mailto:praveenwijesundara0909@gmail.com" class="btn-alt" style="margin: 0;">Email</a>
+                    <div class="section-subheader">
+                        <h3 class="contact-heading">🌐 Find Me Online</h3>
+                        <div class="contact-links">
+                            <a href="https://github.com/Dulshan9" target="_blank" class="btn-alt">GitHub</a>
+                            <a href="https://www.linkedin.com/in/praveen-wijesundara" target="_blank" class="btn-alt">LinkedIn</a>
+                            <a href="mailto:praveenwijesundara0909@gmail.com" class="btn-alt">Email</a>
                         </div>
                     </div>
                 </div>
