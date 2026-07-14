@@ -1,5 +1,15 @@
-// Smooth page transitions for navigation
-// Define this flag so animations don't break when undefined
+/*
+    script.js
+    Purpose: Client-side behavior for the portfolio site.
+    Responsibilities:
+    - Smooth page transitions for navigation
+    - IntersectionObserver based fade-in animations
+    - Contact form success handling
+    - Particle generation
+    - Simple chatbot UI and back-to-top button
+*/
+
+// Feature flag used by animation logic (kept for compatibility)
 let shouldShowLoading = false;
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-links a');

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
+/*
+    styles.css
+    Purpose: Global styles for the portfolio site.
+    - CSS variables are defined in `:root` for easy theme control.
+    - A light-theme override is provided via `@media (prefers-color-scheme: light)`.
+    - Layout uses a fixed header; `main` receives top padding to avoid overlap.
+    Sections below include header, hero, cards, buttons, grid, responsive rules, and utilities.
+*/
+
 :root {
     /* Dark Theme (Default) */
     --bg: #030712;
@@ -1460,7 +1469,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     z-index: 1101;
-}}}
+}
 
 #chatbot-header {
     background: var(--primary);

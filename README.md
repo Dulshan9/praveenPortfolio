@@ -38,6 +38,13 @@ portfolio/
     └── About_ProfilePic.jpg  # Profile picture
 ```
 
+---
+
+Notes for maintainers:
+- The main CSS variables live in `styles.css` under the `:root` selector — change colors there to tweak the theme.
+- Responsive breakpoints to check: `768px` (tablet) and `480px` (mobile) — header spacing is intentionally increased for fixed-header support.
+- JavaScript behaviors (particles, chatbot, smooth navigation) are implemented in `script.js`.
+
 ## 🎨 Design Features
 
 - **Glassmorphism**: Semi-transparent cards with backdrop blur
